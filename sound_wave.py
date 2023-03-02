@@ -63,7 +63,9 @@ if example == "Q-1703186_VO.mp3":
 
     spf_1 = wave.open(filename_1, "r")
     signal_1 = spf_1.readframes(-1)
-    signal_1 = np.frombuffer(signal_1, "Int16")
+    #signal_1 = np.frombuffer(signal_1, "Int16")
+    signal_1 = np.frombuffer(signal_1, dtype=np.int16)
+
     fs_1 = spf_1.getframerate()
     fr_1 = spf_1.getnframes()
     #time = np.linspace(0, len(signal) / fs, num=len(signal))
@@ -91,7 +93,9 @@ elif example == "Q-2807995_VO.mp3":
 
     spf_2 = wave.open(filename_2, "r")
     signal_2 = spf_2.readframes(-1)
-    signal_2 = np.frombuffer(signal_2, "Int16")
+    #signal_2 = np.frombuffer(signal_2, "Int16")
+    signal_2 = np.frombuffer(signal_2,  dtype=np.int16)
+
     fs_2 = spf_2.getframerate()
     fr_2 = spf_2.getnframes()
     #time = np.linspace(0, len(signal) / fs, num=len(signal))
