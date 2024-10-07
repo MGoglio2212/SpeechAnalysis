@@ -2,6 +2,6 @@ matplotlib
 SpeechRecognition
 streamlit
 Wave
-numpy==1.19.2
+numpy
 st-annotated-text
 scipy
